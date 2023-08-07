@@ -3,11 +3,11 @@
 /* appearance */
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int snap      = 10;       /* snap pixel */
-static const unsigned int gappih    = 20;       /* horiz inner gap between windows */
+static const unsigned int gappih    = 10;       /* horiz inner gap between windows */
 static const unsigned int gappiv    = 10;       /* vert inner gap between windows */
 static const unsigned int gappoh    = 5;       /* horiz outer gap between windows and screen edge */
 static const unsigned int gappov    = 5;       /* vert outer gap between windows and screen edge */
-static       int smartgaps          = 0;        /* 1 means no outer gap when there is only one window */
+static       int smartgaps          = 1;        /* 1 means no outer gap when there is only one window */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "sans:size=12" };
@@ -50,16 +50,16 @@ static const Layout layouts[] = {
 	{ "TILE",      tile },    /* first entry is default */
 	{ "MONOCLE",      monocle },
 	{ "SPIRAL",      spiral },
-	{ "[\\]",     dwindle },
-	{ "H[]",      deck },
-	{ "TTT",      bstack },
-	{ "===",      bstackhoriz },
+	{ "DWINDLE",     dwindle },
+	{ "DECK",      deck },
+	{ "BSTACK",      bstack },
+	{ "BSTACK-HORIZ",      bstackhoriz },
 	{ "GRID",      grid },
-	{ "###",      nrowgrid },
-	{ "---",      horizgrid },
-	{ ":::",      gaplessgrid },
-	{ "|M|",      centeredmaster },
-	{ ">M>",      centeredfloatingmaster },
+	{ "NROW-GRID",      nrowgrid },
+	{ "HORIZ-GRID",      horizgrid },
+	{ "NOGAP-GRID",      gaplessgrid },
+	{ "CENTRE-MASTER",      centeredmaster },
+	{ "CENTRE-FLOAT-MASTERM",      centeredfloatingmaster },
 	{ "FLOAT",      NULL },    /* no layout function means floating behavior */
 	{ NULL,       NULL },
 };
@@ -129,9 +129,6 @@ static const Key keys[] = {
   { MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
-	
-  { MODKEY,                       XK_space,  setlayout,      {0} },
-	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
 	
   { MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 	
