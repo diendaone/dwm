@@ -11,3 +11,4 @@ Patches applied:
 - vanity gaps https://dwm.suckless.org/patches/vanitygaps/dwm-cfacts-vanitygaps-6.4_combo.diff
 - hide vacant tags https://dwm.suckless.org/patches/hide_vacant_tags/dwm-hide_vacant_tags-6.3.diff
 - bar height https://dwm.suckless.org/patches/bar_height/dwm-bar-height-spacing-6.3.diff
+- bar padding https://dwm.suckless.org/patches/barpadding/dwm-barpadding-20211020-a786211.diff
