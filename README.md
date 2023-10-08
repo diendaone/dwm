@@ -1,6 +1,7 @@
 Non patches:
 - Sans font as default
 - Thicker border
+- uses rofi instead of dmenu
 - 
 Patches applied:
 - **WIP** alpha https://dwm.suckless.org/patches/alpha/dwm-alpha-20230401-348f655.diff
