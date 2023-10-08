@@ -2,7 +2,7 @@ Non patches:
 - Sans font as default
 - Thicker border
 - uses rofi instead of dmenu
-- 
+
 Patches applied:
 - **WIP** alpha https://dwm.suckless.org/patches/alpha/dwm-alpha-20230401-348f655.diff
   - **WIP** borderfix https://dwm.suckless.org/patches/alpha/dwm-fixborders-6.2.diff
@@ -11,3 +11,4 @@ Patches applied:
 - hide vacant tags https://dwm.suckless.org/patches/hide_vacant_tags/dwm-hide_vacant_tags-6.3.diff
 - bar height https://dwm.suckless.org/patches/bar_height/dwm-bar-height-spacing-6.3.diff
 - remove borders https://dwm.suckless.org/patches/removeborder/
+- alternate tags https://dwm.suckless.org/patches/alternativetags/dwm-alternativetags-6.3.diff
